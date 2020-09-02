@@ -61,3 +61,24 @@
     }
 
 ?>
+
+<!-- Snack 4 -->
+<?php
+
+    $arr = [];
+
+    while (count($arr) < 15) {
+
+        $num = rand(0 , 100);
+
+        if (!in_array($num, $arr)) {
+
+            $arr[] = $num;
+
+        }
+
+    };
+
+    var_dump($arr);
+
+?>
