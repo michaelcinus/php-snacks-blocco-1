@@ -1,3 +1,4 @@
+<!-- Snack 1 -->
 <?php 
 
     $partite = [
@@ -40,3 +41,23 @@
     };
 
 ?> 
+
+<!-- Snack 2 -->
+<?php
+
+    $nome = $_GET["nome"];
+    $email = $_GET["email"];
+    $eta = $_GET["eta"];
+
+    echo $nome . "<br>" . $email ."<br>" . $eta . "<br>";
+
+    if (strlen($nome) > 3 && strpos($email , "@") == true && strpos($email , ".") == true && is_numeric($eta) == true ){
+
+        echo "Accesso riuscito";
+    }else {
+
+        echo "Accesso negato";
+
+    }
+
+?>
